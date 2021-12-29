@@ -9,9 +9,10 @@ int menu(){
 		cout << "2. Restar" << endl;
 		cout << "3. Multiplicar" << endl;
 		cout << "4. Dividir" << endl;
+		cout << "5. Raiz cuadrada" << endl;
 		cout << "0. Salir" << endl;
 		cin >> op;
-	}while(op < 0 || op > 4);
+	}whil(op < 0 || op > 4);
 
 	return op;
 }
@@ -56,11 +57,13 @@ int main(){
 				cin >> n2;
 				cout << "El resultado es: " << dividir(n1, n2) << endl;
 				break;
+			case 5:
+				cout<< "Introduce que número quieres calcular " << endl;
+				cin >> n1;
+				cout << "El resultado es: " << raiz(n1) << endl;
 			default: break;
 		}
 	}while(op > 0);
-	
-
 
 	return 0;
 }
