@@ -41,12 +41,18 @@ int main(){
 				cout << "El resultado es: " << restar(n1, n2) << endl;
 				break;
 			case 3:  
+				cout<< "Introduce que números quieres multiplicar " << endl;
+				cout << "Primer número: ";
 				cin >> n1;
+				cout << "Segundo número: ";
 				cin >> n2;
 				cout << "El resultado es: " << multiplicar(n1, n2) << endl;
 				break;
 			case 4: 
+				cout<< "Introduce que números quieres dividir " << endl;
+				cout << "Primer número: ";
 				cin >> n1;
+				cout << "Segundo número: ";
 				cin >> n2;
 				cout << "El resultado es: " << dividir(n1, n2) << endl;
 				break;
