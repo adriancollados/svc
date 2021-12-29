@@ -60,7 +60,7 @@ int main(){
 			case 5:
 				cout<< "Introduce que número quieres calcular " << endl;
 				cin >> n1;
-				cout << "El resultado es: " << raiz(n1) << endl;
+				cout << "La raiz cuadrada de " << n1 << " es: " << raiz(n1) << endl;
 			default: break;
 		}
 	}while(op > 0);
