@@ -33,3 +33,11 @@ double dividir(double n1, double n2) {
 	return total;
 }
 
+double raiz(double n1){
+	double total;
+
+	total = sqrt(n1);
+
+	return total;
+}
+
