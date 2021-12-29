@@ -12,7 +12,7 @@ int menu(){
 		cout << "5. Raiz cuadrada" << endl;
 		cout << "0. Salir" << endl;
 		cin >> op;
-	}while(op < 0 || op > 4);
+	}while(op < 0 || op > 5);
 
 	return op;
 }
