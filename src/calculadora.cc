@@ -11,7 +11,7 @@ int menu(){
 		cout << "4. Dividir" << endl;
 		cout << "0. Salir" << endl;
 		cin >> op;
-	}while(op < 0 || op > 4);
+	}while(op < 0 && op > 4);
 
 	return op;
 }
@@ -25,24 +25,30 @@ int main(){
 		op = menu();
 		switch(op){
 			case 1: 
+				cout << "Introduce que números quieres sumar " << endl;
+				cout << "Primer número: ";
 				cin >> n1;
+				cout << "Segundo número: ";
 				cin >> n2;
-				cout << sumar(n1, n2) << endl;
+				cout << "El resultado es: " << sumar(n1, n2) << endl;
 				break;
 			case 2: 
+				cout<< "Introduce que números quieres restar " << endl;
+				cout << "Primer número: ";
 				cin >> n1;
+				cout << "Segundo número: ";
 				cin >> n2;
-				cout << restar(n1, n2) << endl;
+				cout << "El resultado es: " << restar(n1, n2) << endl;
 				break;
 			case 3:  
 				cin >> n1;
 				cin >> n2;
-				cout << multiplicar(n1, n2) << endl;
+				cout << "El resultado es: " << multiplicar(n1, n2) << endl;
 				break;
 			case 4: 
 				cin >> n1;
 				cin >> n2;
-				cout << dividir(n1, n2) << endl;
+				cout << "El resultado es: " << dividir(n1, n2) << endl;
 				break;
 			default: break;
 		}
